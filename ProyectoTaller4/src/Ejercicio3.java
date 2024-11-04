@@ -1,10 +1,8 @@
 import java.util.Scanner;
 public class Ejercicio3 {
     public static void main(String[] args) {
-        int  NumMult = 6;
+        int  NumMult = 5;
         Scanner teclado = new Scanner(System.in);
-        System.out.println("1 * " + NumMult + " = " + (1 * NumMult));
-                System.out.println("1 * " + NumMult + " = " + (1 * NumMult));
         System.out.println("1 * " + NumMult + " = " + (1 * NumMult));
         System.out.println("2 * " + NumMult + " = " + (2 * NumMult));
         System.out.println("3 * " + NumMult + " = " + (3 * NumMult));
@@ -21,3 +19,19 @@ public class Ejercicio3 {
                 
         }
 }
+
+/***
+ * debug
+ * 1 * 5 = 5
+2 * 5 = 10
+3 * 5 = 15
+4 * 5 = 20
+5 * 5 = 25
+6 * 5 = 30
+7 * 5 = 35
+8 * 5 = 40
+9 * 5 = 45
+10 * 5 = 50
+11 * 5 = 55
+12 * 5 = 60
+ */

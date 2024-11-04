@@ -16,3 +16,11 @@ public class Ejercicio2 {
         
     }
 }
+
+/***
+ * debug
+ * DAME LOS GASTOS DEL H1:20
+DAME LOS GASTOS DEL H2:15
+DAME LOS GASTOS DEL H3:35
+GASTOS TOTALES:70.0
+ */
