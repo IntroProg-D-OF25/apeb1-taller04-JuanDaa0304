@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Ejercicio8 {
     public static void main(String[] args) {
         int edad;
-        double costoNetflix, costoYoutubePremium, costoDropbox, costoSpotify, total_mensual, descuento = 0;
+        double costoNetflix, costoYoutubePremium, costoDropbox, costoSpotify, total_mensual;
         Scanner teclado = new Scanner(System.in);
         System.out.print("Ingresa costo mensual de netflix: ");
         costoNetflix = teclado.nextDouble();
@@ -15,39 +15,21 @@ public class Ejercicio8 {
         System.out.println("Ingresa edad de la persona: ");
         edad = teclado.nextInt();
         total_mensual = costoNetflix + costoYoutubePremium + costoDropbox + costoSpotify;
-        if (edad < 30 ) {
-        descuento = total_mensual * 0.20;
-        total_mensual -= descuento;
-        }
-        if (descuento > 0) {
-         System.out.println("Se hizo el descuento del 20%: $" + descuento);
-        }
+        System.out.println("Se descuenta el 20% si la persona es menor a 30 años " );
         System.out.println("El valor tota a pagar mensual de servicios digitales de una persona es: $" + total_mensual);
     }
 }
 /***
  * debug
- *          CON DESCUENTO
- * Ingresa costo mensual de netflix: 30
+ * Ingresa costo mensual de netflix: 29,99
 Ingresa costo mensual de Youtube Premium: 
-20
+19,99
 Ingresa costo mensual de Dropbox: 
-24,99
+25
 Ingresa costo mensual de Spotify: 
-27,99
+24,99
 Ingresa edad de la persona: 
 25
-Se hizo el descuento del 20%: $20.596
-El valor tota a pagar mensual de servicios digitales de una persona es: $82.38399999999999
-*          SIN DESCUENTO
-* Ingresa costo mensual de netflix: 30
-Ingresa costo mensual de Youtube Premium: 
-20
-Ingresa costo mensual de Dropbox: 
-24,99
-Ingresa costo mensual de Spotify: 
-27,99
-Ingresa edad de la persona: 
-35
-El valor tota a pagar mensual de servicios digitales de una persona es: $102.97999999999999
+Se descuenta el 20% si la persona es menor a 30 años 
+El valor tota a pagar mensual de servicios digitales de una persona es: $99.96999999999998
  */
